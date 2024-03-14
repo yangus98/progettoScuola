@@ -1,34 +1,30 @@
-const divContainer = document.querySelector("#tendina-menù");
+// Seleziona il pulsante
+const nostriCorsiBtn = document.getElementById("nostri-corsi");
+// Seleziona la tendina del menu
+const divContainer = document.getElementById("tendina-menù");
 
-let isClicked = true;
-
-let showOrHide = function(){
-    if (isClicked){
-    divContainer.style.visibility = "visible";
-    isClicked = false;
+// Aggiungi un gestore di eventi per il clic sul pulsante
+nostriCorsiBtn.addEventListener("click", function() {
+    // Controlla se la tendina del menu è visibile o nascosta
+    if (divContainer.style.visibility === "visible") {
+        // Se è visibile, nascondila
+        divContainer.style.visibility = "hidden";
     } else {
-    divContainer.style.visibility = "hidden";
-    isClicked = true;
+        // Altrimenti, mostrala
+        divContainer.style.visibility = "visible";
     }
-}
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nostriCorsiBtn.addEventListener("mouseover", function() {
+    // Controlla se la tendina del menu è visibile o nascosta
+    if (divContainer.style.visibility === "visible") {
+        // Se è visibile, nascondila
+        divContainer.style.visibility = "hidden";
+    } else {
+        // Altrimenti, mostrala
+        divContainer.style.visibility = "visible";
+    }
+});
 
 
 
