@@ -32,7 +32,7 @@ footer{
     margin-right: 10px;
 }
 
-.language-button{
+#language-button{
     width: 50px;
     height: 20px;
     color: white;
@@ -50,7 +50,7 @@ footer{
     display: flex;
 }
 
-.finestra-footer{
+#finestra-footer{
     border: solid var(--nav);
     width: 100px;
     position: absolute;
