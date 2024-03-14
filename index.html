@@ -9,10 +9,10 @@
   <body>
     <nav>
       <div id="NavPrimaria">
-        <img src="assets/logo.jpeg" class="logo" />
+        <img src="assets/LOGO.svg" class="logo" />
         <div id="TextNav">
-          <h1>I.S.K. School</h1>
-          <h2>All For One</h2>
+          <h1>I.S.K. SCHOOL</h1>
+          <h2>ALL FOR ONE</h2>
         </div>
       </div>
       <div id="NavSecondaria">
@@ -28,6 +28,51 @@
         <p><img src="assets/sk.jpg" class="iconsK" />Coreano</p>
       </div>
     </nav>
-    <script src="/JS/app.js"></script>
+
+    <main>
+      <section id="mainCorpo">
+          <article id="chiSiamo">
+              <p>Chi siamo</p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas earum hic mollitia at recusandae ullam exercitationem sed dolore accusamus explicabo necessitatibus eius aperiam magni, ipsa quas enim molestiae ipsam optio.
+          </article>
+          <div id="slider">
+              <div class="mov-btn">
+                  <button onclick="prec()"><</button>
+              </div>
+
+              <div id="img_slider">
+                  <img src="/assets/prima.jpg" alt="">
+                  <img src="/assets/seconda.avif" alt="">
+                  <img src="/assets/terza.avif" alt="">
+                  <img src="/assets/quarta.avif" alt="">
+              </div>
+        
+              <div class="mov-btn">
+                <button onclick="succ()">></button>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <form action="https://formsubmit.co/giuseppebianconi2@gmail.com" method="POST">
+    <div class="input-container">
+       <label for="name">Nome e cognome</label><input id="name" type="text" name="name" required>
+       <label for="email">E-mail</label><input id="email" type="email" name="email" required>
+       <label for="message">Messaggio</label><textarea id="message" name="Message" required></textarea>
+       <button class="form-btn">Invia</button>
+    </div>
+   </form>
+
+   <footer>
+    <div class="language-div"><button id="language-button">V</button></div>
+    <article class="footer-text">Sede centrale: Via Scipione l'africano, 28 70100 BARI</article>
+    <div class="all-icons"><a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"><img src="/assets/facebook.png" class="footer-icons"></a> <a href="https://www.instagram.com/apuliadigitalmaker/"><img src="/assets/instagram.png" class="footer-icons"></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"><img src="/assets/twitter.png" class="footer-icons"></a></div>
+    <div id="finestra-footer">
+        <div class="flag-line"><a href=""><img src="/assets/italy.png" class="footer-icons">ITA</a></div>
+        <div class="flag-line"><a href=""><img src="/assets/uk.jpg" class="footer-icons">ENG</a></div>
+    </div>
+   </footer>
+
+  <script src="/JS/app.js"></script>
   </body>
 </html>
