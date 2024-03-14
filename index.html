@@ -1,78 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProgettoHtml</title>
+    <title>I.S.K. School Official Site</title>
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/lion.png" />
   </head>
   <body>
-    <nav>
-      <div id="NavPrimaria">
-        <img src="assets/LOGO.svg" class="logo" />
-        <div id="TextNav">
-          <h1>I.S.K. SCHOOL</h1>
-          <h2>ALL FOR ONE</h2>
+    <header>
+      <nav>
+        <div id="NavPrimaria">
+          <img src="assets/LOGO.svg" class="logo" />
+          <div id="TextNav">
+            <h1>I.S.K. SCHOOL</h1>
+            <h2>ALL FOR ONE</h2>
+          </div>
         </div>
-      </div>
-      <div id="NavSecondaria">
-        <button id="nostri-corsi" onclick="showOrHide()">I Nostri Corsi</button>
-        <a href="pagine/Offerta Formativa.html">Offerta Formativa</a>
-        <a href="pagine/Sedi.html">Sedi</a>
-        <a href="pagine/Docenti.html">Docenti</a>
-        <a href="pagine/Contattaci.html">Contattaci</a>
-      </div>
-      <div id="tendina-menù">
-        <p><img src="assets/uk.jpg" class="icons" />Inglese</p>
-        <p><img src="assets/spain.jpg" class="icons" />Spagnolo</p>
-        <p><img src="assets/sk.jpg" class="iconsK" />Coreano</p>
-      </div>
-    </nav>
+        <div id="NavSecondaria">
+          <button id="nostri-corsi" onclick="showOrHide()">
+            I Nostri Corsi
+          </button>
+          <a href="pagine/Offerta Formativa.html">Offerta Formativa</a>
+          <a href="pagine/Sedi.html">Sedi</a>
+          <a href="pagine/Docenti.html">Docenti</a>
+          <a href="#form-section">Contattaci</a>
+        </div>
+        <div id="tendina-menù">
+          <a href="pagine/inglese.html"><img src="assets/uk.jpg" class="icon-menù" />Inglese</a>
+          <a href="pagine/spagnolo.html"><img src="assets/spain.jpg" class="icon-menù" />Spagnolo</a>
+          <a href="pagine/coreano.html"><img src="assets/sk.jpg" class="icon-menù" />Coreano</a>
+        </div>
+      </nav>
+
+      <video autoplay muted loop>
+        <source
+          src="/assets/Teacher Teaching the Students HD Stock Videos  Free stock footage  Free HD Videos - No Copyright.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </header>
 
     <main>
       <section id="mainCorpo">
-          <article id="chiSiamo">
-              <p>Chi siamo</p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas earum hic mollitia at recusandae ullam exercitationem sed dolore accusamus explicabo necessitatibus eius aperiam magni, ipsa quas enim molestiae ipsam optio.
-          </article>
-          <div id="slider">
-              <div class="mov-btn">
-                  <button onclick="prec()"><</button>
-              </div>
+        <article id="chiSiamo">
+          <article id="chiSiamoTitle">Chi siamo</article>
+          Siamo una rinomata scuola privata di lingue che offre corsi di alto livello in inglese, spagnolo e coreano.
+          Situata nel cuore della città di Bari, siamo dedicati alla promozione della conoscenza e della comprensione interculturale attraverso l'apprendimento delle lingue.
+          Presso la nostra accademia, ci impegniamo a offrire un ambiente educativo stimolante e inclusivo,
+          dove gli studenti di tutte le età e livelli di competenza linguistica possono sviluppare le loro abilità linguistiche in modo efficace e divertente.
+        </article>
 
-              <div id="img_slider">
-                  <img src="/assets/prima.jpg" alt="">
-                  <img src="/assets/seconda.avif" alt="">
-                  <img src="/assets/terza.avif" alt="">
-                  <img src="/assets/quarta.avif" alt="">
-              </div>
-        
-              <div class="mov-btn">
-                <button onclick="succ()">></button>
-              </div>
+        <div id="slider">
+          <div class="mov-btn">
+            <button onclick="prec()"><</button>
           </div>
+
+          <div id="img_slider">
+            <img src="/assets/prima.jpg" alt="" />
+            <img src="/assets/seconda.avif" alt="" />
+            <img src="/assets/terza.avif" alt="" />
+            <img src="/assets/quarta.avif" alt="" />
+          </div>
+
+          <div class="mov-btn">
+            <button onclick="succ()">></button>
+          </div>
+        </div>
       </section>
-  </main>
+    </main>
 
-  <form action="https://formsubmit.co/giuseppebianconi2@gmail.com" method="POST">
-    <div class="input-container">
-       <label for="name">Nome e cognome</label><input id="name" type="text" name="name" required>
-       <label for="email">E-mail</label><input id="email" type="email" name="email" required>
-       <label for="message">Messaggio</label><textarea id="message" name="Message" required></textarea>
-       <button class="form-btn">Invia</button>
-    </div>
-   </form>
+    <section id="form-section">
+    <form
+      action="https://formsubmit.co/giuseppebianconi2@gmail.com"
+      method="POST"
+    >
+      <div class="input-container">
+        <strong>Form di contatto</strong>
+        <label for="name">Nome e cognome</label>
+        <input id="name" type="text" name="name" required />
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" required />
+        <label for="message">Messaggio</label>
+        <textarea id="message" name="Message" required></textarea>
+        <button class="form-btn">Invia</button>
+      </div>
+    </form>
+    </section>
 
-   <footer>
-    <div class="language-div"><button id="language-button">V</button></div>
-    <article class="footer-text">Sede centrale: Via Scipione l'africano, 28 70100 BARI</article>
-    <div class="all-icons"><a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"><img src="/assets/facebook.png" class="footer-icons"></a> <a href="https://www.instagram.com/apuliadigitalmaker/"><img src="/assets/instagram.png" class="footer-icons"></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"><img src="/assets/twitter.png" class="footer-icons"></a></div>
-    <div id="finestra-footer">
-        <div class="flag-line"><a href=""><img src="/assets/italy.png" class="footer-icons">ITA</a></div>
-        <div class="flag-line"><a href=""><img src="/assets/uk.jpg" class="footer-icons">ENG</a></div>
-    </div>
-   </footer>
+    <footer>
+      <div class="language-div"><button id="language-button">Cambia lingua</button></div>
+      <article class="footer-text">
+        Sede legale: Via Scipione l'africano, 28 - 70100 BARI
+      </article>
+      <article class="footer-text2">Realizzato dal Freezer&Sayan Team.</article>
+      <div class="all-icons">
+        <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
+          ><img src="/assets/facebook.png" class="footer-icons"
+        /></a>
+        <a href="https://www.instagram.com/apuliadigitalmaker/"
+          ><img src="/assets/instagram.png" class="footer-icons"
+        /></a>
+        <a
+          href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
+          ><img src="/assets/twitter.png" class="footer-icons"
+        /></a>
+      </div>
+      <div id="finestra-footer">
+        <a href="/pagine/index-eng.html"><img src="/assets/uk.jpg" class="language-icon" />ENG</a>
+      </div>
+    </footer>
 
-  <script src="/JS/app.js"></script>
+    <script src="/JS/app.js"></script>
   </body>
 </html>

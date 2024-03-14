@@ -1,29 +1,25 @@
-@font-face {
-    font-family: "PostSerif";
-    src: url("https://db.onlinewebfonts.com/t/3a914a8ff5f3e65d151d01901ab1d327.eot");
-    src: url("https://db.onlinewebfonts.com/t/3a914a8ff5f3e65d151d01901ab1d327.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/3a914a8ff5f3e65d151d01901ab1d327.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/3a914a8ff5f3e65d151d01901ab1d327.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/3a914a8ff5f3e65d151d01901ab1d327.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/3a914a8ff5f3e65d151d01901ab1d327.svg#PostSerif")format("svg");
-    font-family: "MS Reference Sans Serif";
-    src: url("https://db.onlinewebfonts.com/t/c8f34a4d8d6a866f095261f987a237a8.eot");
-    src: url("https://db.onlinewebfonts.com/t/c8f34a4d8d6a866f095261f987a237a8.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/c8f34a4d8d6a866f095261f987a237a8.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/c8f34a4d8d6a866f095261f987a237a8.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/c8f34a4d8d6a866f095261f987a237a8.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/c8f34a4d8d6a866f095261f987a237a8.svg#MS Reference Sans Serif")format("svg");
+@font-face{
+    font-family: nav;
+    src: url(beba.ttf);
 }
 
-nav{
-    font-family: "PostSerif";
+@font-face{
+    font-family: all-text;
+    src: url(louis.ttf);
+}
+
+nav, #NavSecondaria button{
+    font-family: nav;
 }
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
-    font-family: "MS Reference Sans Serif";
+    box-sizing: border-box;
+}
+
+body{
+    font-family: all-text;
 }
 
 :root{

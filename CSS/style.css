@@ -18,10 +18,20 @@
   margin-left: 10px;
   text-decoration: none;
   color: black;
-  font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: auto;
   margin-bottom: auto;
-  font-size: 15px;
+  font-size: 20px;
+}
+
+#nostri-corsi {
+  background-color: var(--midnav);
+  border: none;
+  font-size: 20px;
+}
+
+#NavSecondaria a:hover,
+#nostri-corsi:hover{
+  color: white;
 }
 
 .logo {
@@ -39,49 +49,46 @@
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 45px;
-  -webkit-text-stroke-width: 1px;
+  font-size: 65px;
+  -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: #2180f1;
 }
 
 h2 {
-  font-size: 27px;
-  -webkit-text-stroke-width: 0.5px;
+  font-size: 35px;
+  -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: #2180f1;
 }
 
 #tendina-menù {
   visibility: hidden;
   width: 100px;
+  height: 53px;
   margin-left: 466px;
   background-color: var(--nav);
   color: black;
   text-align: center;
-  font-size: 13px;
-}
-
-#nostri-corsi {
-  background-color: var(--midnav);
-  border: none;
   font-size: 15px;
+  position: absolute;
 }
 
-.icons {
+.icon-menù{
   width: 15px;
-  height: 15px;
+  height: 8px;
   margin-right: 5px;
   margin-top: 5px;
 }
 
-.iconsK {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-  margin-top: 5px;
+#tendina-menù a{
+  display: flex;
+  margin-left: 5px;
 }
 
-a {
+#tendina-menù a:hover{
+  color: white;
+}
+
+a{
   text-decoration: none;
   color: black;
 }
@@ -89,6 +96,13 @@ a {
 #mainCorpo {
   width: 100%;
   padding: 20px;
+  text-align: center;
+}
+
+#chiSiamo{
+  border: dotted var(--nav);
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 main {
@@ -96,9 +110,19 @@ main {
   height: 60vh;
 }
 
-#chiSiamo p {
+#chiSiamoTitle{
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#form-section{
+  margin-top: 160px;
+  margin-bottom: 10px;
+}
+
+.input-container strong{
+  padding-bottom: 5px;
 }
 
 #slider {
@@ -113,7 +137,7 @@ main {
 
 #img_slider img {
   width: 100%;
-  height: 45vh;
+  height: 60vh;
   display: none;
 }
 
@@ -128,42 +152,8 @@ main {
   outline: none;
   color: black;
   cursor: pointer;
-  background: none;
+  background: var(--nav);
   border-radius: 56px;
-  font-size: 40px;
-  transition: all 0.1s ease-in-out;
-}
-
-#slider-smart {
-  width: 100%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-}
-
-#img_slider-smart {
-  width: 100%;
-}
-
-#img_slider-smart img {
-  width: 100%;
-  height: 50vh;
-  display: none;
-}
-
-#img_slider-smart img:nth-child(1) {
-  display: block;
-}
-
-#slider-smart button {
-  width: 40px;
-  height: 40px;
-  border: solid white 2px;
-  outline: none;
-  color: black;
-  cursor: pointer;
-  background: none;
-  border-radius: 25px;
   font-size: 40px;
   transition: all 0.1s ease-in-out;
 }
@@ -180,10 +170,23 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  padding: 10px;
 }
 
 form {
   margin-bottom: 10px;
+  width: max-content;
+  border: dotted var(--nav);
+  margin: 0 auto;
+}
+
+label{
+  font-size: 15px;
+}
+
+.form-btn{
+  background-color: var(--nav);
+  margin-top: 5px;
 }
 
 footer {
@@ -194,12 +197,25 @@ footer {
 .footer-icons {
   width: 30px;
   height: 30px;
-  margin: 10px 10px 10px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .all-icons,
-.footer-text {
+.footer-text,
+.footer-text2
+{
   text-align: center;
+}
+
+.footer-text{
+  font-size: 14px;
+}
+
+.footer-text2{
+  font-size: 12px;
+  margin-top: 15px;
 }
 
 .language-div {
@@ -208,17 +224,26 @@ footer {
 }
 
 #language-button {
-  width: 50px;
+  width: 110px;
   height: 20px;
-  color: white;
+  color: black;
   background-color: var(--nav);
   border-radius: 10px;
   margin-top: 5px;
 }
 
 .footer-icons:hover {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
+}
+
+#finestra-footer a:hover {
+  color: white;
+}
+
+.language-icon{
+  width: 24px;
+  height: 15px;
 }
 
 .flag-line {
@@ -226,11 +251,27 @@ footer {
 }
 
 #finestra-footer {
-  border: solid var(--nav);
+  border: solid 1px;
   width: 100px;
   position: absolute;
-  top: 820px;
-  right: 10px;
-  background-color: white;
+  right: 15px;
+  top: 1408px;
+  background-color: var(--nav);
   visibility: hidden;
+  text-align: center;
+}
+
+video{
+  width: 100%;
+  height: 74vh;
+  pointer-events: none;
+  object-fit: fill;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
 }
