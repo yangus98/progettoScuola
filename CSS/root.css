@@ -28,8 +28,8 @@ nav{
 
 :root{
     --primario: #9381FF;
-    --nav: #2f2952;
-    --midnav: #6557af;
+    --nav: rgb(244, 211, 3);
+    --midnav: rgb(255, 253, 208);
     --sidebar-form: #d6b98e;
     --footer: #93b1f1;
     --fontnav: #ffffff;
