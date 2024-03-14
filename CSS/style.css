@@ -1,1 +1,61 @@
 @import url(root.css);
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+form{
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: var(--footer);
+    height: 150px;
+}
+
+.footer-icons{
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 10px 10px;
+}
+
+.all-icons, .footer-text{
+    text-align: center;
+}
+
+.language-div{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.language-button{
+    width: 50px;
+    height: 20px;
+    color: white;
+    background-color: var(--nav);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.footer-icons:hover{
+    width: 35px;
+    height: 35px;
+}
+
+.flag-line{
+    display: flex;
+}
+
+.finestra-footer{
+    border: solid var(--nav);
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    background-color: white;
+    visibility: hidden;
+}
