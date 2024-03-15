@@ -13,6 +13,11 @@
     src: url(Belgiano.ttf);
 }
 
+@font-face{
+    font-family: auto-type;
+    src: url(Chapaza.ttf);
+}
+
 #NavSecondaria, #NavSecondaria button{
     font-family: nav;
 }
@@ -29,6 +34,7 @@
 
 body{
     font-family: all-text;
+    background-color: #F5E8D2;
 }
 
 :root{
