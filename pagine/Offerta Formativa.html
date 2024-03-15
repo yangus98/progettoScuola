@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I. S. K. School Official Site</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/offerta-formativa.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/lion.png" />
+  </head>
+  <body>
+    <nav>
+      <div id="NavPrimaria">
+        <img src="/assets/LOGO.svg" class="logo" />
+        <div id="TextNav">
+          <h1>I. S. K. SCHOOL</h1>
+          <h2>ALL FOR ONE</h2>
+        </div>
+      </div>
+      <div id="NavSecondaria">
+        <button id="nostri-corsi" onclick="showOrHide()">I Nostri Corsi</button>
+        <a href="../index.html">Homepage</a>
+        <a href="pagine/Sedi.html">Sedi</a>
+        <a href="pagine/Docenti.html">Docenti</a>
+        <a href="#form-section">Contattaci</a>
+      </div>
+      <div id="tendina-menù">
+        <a href="pagine/inglese.html"
+          ><img src="/assets/uk.jpg" class="icon-menù" />Inglese</a
+        >
+        <a href="pagine/spagnolo.html"
+          ><img src="/assets/spain.jpg" class="icon-menù" />Spagnolo</a
+        >
+        <a href="pagine/coreano.html"
+          ><img src="/assets/sk.jpg" class="icon-menù" />Coreano</a
+        >
+      </div>
+    </nav>
+
+    <article>
+        <div class="formativa-title"><article>Inglese</article><button id="toggleBtn1">Mostra/Nascondi dettagli</button></div>
+        <article id="offerta-corpo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ex harum neque magnam ipsum error similique. Aut, odio, veniam provident totam, incidunt sequi nam nostrum nobis quibusdam iusto magni beatae?</article>
+        <div class="formativa-title"><article>Spagnolo</article><button id="toggleBtn2">Mostra/Nascondi dettagli</button></div>
+        <article id="offerta-corpo2">2lorem</article>
+        <div class="formativa-title"><article>Coreano</article><button id="toggleBtn3">Mostra/Nascondi dettagli</button></div>
+        <article id="offerta-corpo3">
+            Il nostro corso di lingua coreana vi permetterà di imparare: coreano 1 (primo anno), coreano 2 (secondo anno),
+             letteratura coreana (secondo anno), alfabeto (secondo anno) e scrittura coreana (secondo anno).
+        </article>
+    </article>
+
+    <footer>
+      <div class="language-div">
+        <button id="language-button">Cambia lingua</button>
+      </div>
+      <address class="footer-text">
+        Sede legale: Via Scipione l'africano, 28 - 70100 BARI
+      </address>
+      <article class="footer-text2">Realizzato dal Freezer&Sayan Team.</article>
+      <div class="all-icons">
+        <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
+          ><img src="/assets/facebook.png" class="footer-icons"
+        /></a>
+        <a href="https://www.instagram.com/apuliadigitalmaker/"
+          ><img src="/assets/instagram.png" class="footer-icons"
+        /></a>
+        <a
+          href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
+          ><img src="/assets/twitter.png" class="footer-icons"
+        /></a>
+      </div>
+      <div id="finestra-footer">
+        <a href="/pagine/index-eng.html"
+          ><img src="/assets/uk.jpg" class="language-icon" />ENG</a
+        >
+      </div>
+    </footer>
+
+    <script src="/JS/app.js"></script>
+  </body>
 </html>

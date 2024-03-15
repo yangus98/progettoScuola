@@ -83,6 +83,53 @@ languageBtn.addEventListener("mouseover", function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleBtn = document.getElementById('toggleBtn1');
+    var toggleDivs = document.getElementById('offerta-corpo1');
+  
+    toggleBtn.addEventListener('click', function () {
+      
+        if (toggleDivs.style.display === "block") {
+            // Se è visibile, nascondila
+            toggleDivs.style.display = "none";
+        } else {
+            // Altrimenti, mostrala
+            toggleDivs.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleBtn = document.getElementById('toggleBtn2');
+    var toggleDivs = document.getElementById('offerta-corpo2');
+  
+    toggleBtn.addEventListener('click', function () {
+      
+        if (toggleDivs.style.display === "block") {
+            // Se è visibile, nascondila
+            toggleDivs.style.display = "none";
+        } else {
+            // Altrimenti, mostrala
+            toggleDivs.style.display = "block";
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleBtn = document.getElementById('toggleBtn3');
+    var toggleDivs = document.getElementById('offerta-corpo3');
+  
+    toggleBtn.addEventListener('click', function () {
+      
+        if (toggleDivs.style.display === "block") {
+            // Se è visibile, nascondila
+            toggleDivs.style.display = "none";
+        } else {
+            // Altrimenti, mostrala
+            toggleDivs.style.display = "block";
+        }
+    });
+});
 
 
 
