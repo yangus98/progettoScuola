@@ -10,6 +10,7 @@
   background-color: var(--midnav);
   justify-content: center;
   height: 30px;
+  position: relative;
 }
 
 #NavSecondaria a,
@@ -50,26 +51,25 @@
 
 h1 {
   font-size: 65px;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: #2180f1;
+  text-shadow: 2px 2px #2180f1;
 }
 
 h2 {
   font-size: 35px;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: #2180f1;
+  text-shadow: 2px 2px #2180f1;
 }
 
 #tendina-menù {
   visibility: hidden;
-  width: 100px;
-  height: 53px;
-  margin-left: 466px;
+  width: auto;
   background-color: var(--nav);
   color: black;
   text-align: center;
   font-size: 15px;
   position: absolute;
+  top: calc(100%); /* Posiziona sotto il pulsante */
+  left: 37.5%;
+  transform: translateX(-50%);
 }
 
 .icon-menù{

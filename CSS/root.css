@@ -8,8 +8,17 @@
     src: url(louis.ttf);
 }
 
-nav, #NavSecondaria button{
+@font-face{
+    font-family: nav-title;
+    src: url(Belgiano.ttf);
+}
+
+#NavSecondaria, #NavSecondaria button{
     font-family: nav;
+}
+
+#TextNav{
+    font-family: nav-title;
 }
 
 *{
