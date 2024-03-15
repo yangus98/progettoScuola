@@ -1,0 +1,74 @@
+.imgKorea {
+    margin-top: 3px;
+    margin-bottom: auto;
+    margin-left: 3px;
+   width: 200px;
+   height: 400px;
+   align-self: auto;
+}
+.IMGDescription{
+   display: flex;
+   margin-bottom: 3px;
+}
+.Textimage{
+    padding-left: 15px;
+}
+.MainTitle {
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 0, 0);
+}
+.Saluto {
+    color:red;
+    font-size: small;
+    
+}
+
+.Table {
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: red;
+    padding: 5px;
+    border-right: solid black;
+    border-left: solid black;
+    border-top: solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border: solid black;
+    padding: 5px;
+}
+.FraseFinale {
+    margin-top: 5px;
+}
+
+#finestra-footer {
+    border: solid 1px;
+    width: 100px;
+    position: absolute;
+    right: 15px;
+    top: 593px;
+    background-color: var(--nav);
+    visibility: hidden;
+    text-align: center;
+}
+
+#tendina-menù {
+    visibility: hidden;
+    width: 100px;
+    height: 53px;
+    margin-left: 497px;
+    background-color: var(--nav);
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+}
+
+footer{
+    margin-top: 0px;
+}
