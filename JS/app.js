@@ -26,7 +26,7 @@ nostriCorsiBtn.addEventListener("mouseover", function() {
     }
 });
 
-var n_img = 4;
+var n_img = 3;
 var corrente = 1;
 
 function succ(){
@@ -54,82 +54,6 @@ function prec(){
 }
 
 setInterval(succ, 5000);
-
-// Seleziona il pulsante
-const languageBtn = document.getElementById("language-button");
-// Seleziona la tendina del menu
-const footerContainer = document.getElementById("finestra-footer");
-
-// Aggiungi un gestore di eventi per il clic sul pulsante
-languageBtn.addEventListener("click", function() {
-    // Controlla se la tendina del menu è visibile o nascosta
-    if (footerContainer.style.visibility === "visible") {
-        // Se è visibile, nascondila
-        footerContainer.style.visibility = "hidden";
-    } else {
-        // Altrimenti, mostrala
-        footerContainer.style.visibility = "visible";
-    }
-});
-
-languageBtn.addEventListener("mouseover", function() {
-    // Controlla se la tendina del menu è visibile o nascosta
-    if (footerContainer.style.visibility === "visible") {
-        // Se è visibile, nascondila
-        footerContainer.style.visibility = "hidden";
-    } else {
-        // Altrimenti, mostrala
-        footerContainer.style.visibility = "visible";
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var toggleBtn = document.getElementById('toggleBtn1');
-    var toggleDivs = document.getElementById('offerta-corpo1');
-  
-    toggleBtn.addEventListener('click', function () {
-      
-        if (toggleDivs.style.display === "block") {
-            // Se è visibile, nascondila
-            toggleDivs.style.display = "none";
-        } else {
-            // Altrimenti, mostrala
-            toggleDivs.style.display = "block";
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var toggleBtn = document.getElementById('toggleBtn2');
-    var toggleDivs = document.getElementById('offerta-corpo2');
-  
-    toggleBtn.addEventListener('click', function () {
-      
-        if (toggleDivs.style.display === "block") {
-            // Se è visibile, nascondila
-            toggleDivs.style.display = "none";
-        } else {
-            // Altrimenti, mostrala
-            toggleDivs.style.display = "block";
-        }
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    var toggleBtn = document.getElementById('toggleBtn3');
-    var toggleDivs = document.getElementById('offerta-corpo3');
-  
-    toggleBtn.addEventListener('click', function () {
-      
-        if (toggleDivs.style.display === "block") {
-            // Se è visibile, nascondila
-            toggleDivs.style.display = "none";
-        } else {
-            // Altrimenti, mostrala
-            toggleDivs.style.display = "block";
-        }
-    });
-});
 
 // Definisci un array di frasi da digitare
 var phrases = [
@@ -175,13 +99,3 @@ function typeWriter(text, index, callback) {
 
 // Avvia l'effetto di scrittura automatica delle frasi
 typePhrases(phrases, 0);
-
-
-
-
-
-
-
-
-
-

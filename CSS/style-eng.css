@@ -1,0 +1,11 @@
+#tendina-menù {
+    visibility: hidden;
+    width: auto;
+    background-color: var(--nav);
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    top: calc(100%);
+    left: 37.5%;
+}

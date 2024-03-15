@@ -20,8 +20,7 @@
 }
 .Saluto {
     color:rgb(0, 0, 255);
-    font-size: small;
-    
+    font-size: 20px;
 }
 
 .Table {
@@ -36,7 +35,6 @@ th{
     border-left: solid black;
     border-top: solid black;
     border-collapse: collapse;
-    
 }
 
 td{
@@ -48,27 +46,17 @@ td{
     margin-top: 5px;
 }
 
-#finestra-footer {
-    border: solid 1px;
-    width: 100px;
-    position: absolute;
-    right: 15px;
-    top: 593px;
-    background-color: var(--nav);
-    visibility: hidden;
-    text-align: center;
-}
-
 #tendina-menù {
     visibility: hidden;
     width: 100px;
     height: 53px;
-    margin-left: 470px;
     background-color: var(--nav);
     color: black;
     text-align: center;
     font-size: 15px;
     position: absolute;
+    top: calc(100%);
+    left: 44%;
 }
 
 footer{

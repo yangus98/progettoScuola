@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I. S. K. School Official Site</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style-eng.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/lion.svg" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="NavPrimaria">
+          <img src="/assets/LOGO.svg" class="logo" />
+          <div id="TextNav">
+            <h1>I. S. K. SCHOOL</h1>
+            <h2>ALL FOR ONE</h2>
+          </div>
+          <article id="welcome-container"></article>
+        </div>
+        <div id="NavSecondaria">
+          <button id="nostri-corsi" onclick="showOrHide()">Our Courses</button>
+          <div id="tendina-menù">
+            <a href="/pagine/inglese-eng.html"><img src="/assets/uk.jpg" class="icon-menù" />English</a>
+            <a href="/pagine/spagnolo-eng.html"><img src="/assets/spain.jpg" class="icon-menù" />Spanish</a>
+            <a href="/pagine/coreano-eng.html"><img src="/assets/sk.jpg" class="icon-menù" />Korean</a>
+          </div>
+          <a href="/pagine/Sedi-eng.html">Locations</a>
+          <a href="/pagine/Docenti-eng.html">Teachers</a>
+          <a href="#form-section">Contact Us</a>
+          <a href="/index.html"><img src="/assets/italy.png" class="language-icon" /></a>
+        </div>
+      </nav>
+
+      <video autoplay muted loop>
+        <source
+          src="/assets/Teacher Teaching the Students HD Stock Videos  Free stock footage  Free HD Videos - No Copyright.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </header>
+
+    <main>
+      <section id="mainCorpo">
+        <article id="chiSiamo">
+          <article id="chiSiamoTitle">Who we are</article>
+          We are a renowned private language school offering high-level courses in English, Spanish and Korean.
+          Located in the heart of the city of Bari, we are dedicated to promoting intercultural knowledge and understanding through language learning.
+          At our academy, we are committed to offering a stimulating and inclusive educational environment,
+          where students of all ages and levels of language proficiency can develop their language skills in an effective and fun way.
+        </article>
+
+        <div id="slider">
+          <div class="mov-btn">
+            <button onclick="prec()"><--</button>
+          </div>
+
+          <div id="img_slider">
+            <img src="/assets/prima.jpg" alt="" />
+            <img src="/assets/seconda.jpg" alt="" />
+            <img src="/assets/terza.jpg" alt="" />
+          </div>
+
+          <div class="mov-btn">
+            <button onclick="succ()">--></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="form-section">
+      <form
+      action="https://formsubmit.co/giuseppebianconi2@gmail.com"
+      method="POST"
+      id="contact-form">
+      <div class="input-container">
+        <legend>CONTACT FORM</legend>
+        <label for="name">Name and Surname</label>
+        <input id="name" type="text" name="name" required />
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+        <button type="submit" class="form-btn">Send</button>
+      </div>
+    </form>
+    </section>
+
+    <footer>
+      <address class="footer-text">
+        Registered office: Via Scipione l'africano, 28 - 70100 BARI
+      </address>
+      <article class="footer-text2">Realized by Freezer&Sayan Team.</article>
+      <div class="all-icons">
+        <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
+          ><img src="/assets/facebook.png" class="footer-icons"
+        /></a>
+        <a href="https://www.instagram.com/apuliadigitalmaker/"
+          ><img src="/assets/instagram.png" class="footer-icons"
+        /></a>
+        <a
+          href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
+          ><img src="/assets/twitter.png" class="footer-icons"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="/JS/app.js"></script>
+  </body>
+</html>
