@@ -95,63 +95,67 @@ function prec(){
 
 setInterval(succ, 5000);
 
-const questions = [
+
+
+const questionsIta = [
   {
-    question: "Che tipo di luoghi preferisci visitare?",
-    options: ["Posti storici", "Natura incontaminata", "Bellezze urbane"],
+    questionIta: "Che tipo di luoghi preferisci visitare?",
+    optionsIta: ["Siti storici", "Natura incontaminata", "Bellezze urbane"],
   },
   {
-    question: "Quali di questi hobbies preferisci?",
-    options: ["Giocare a calcio", "Vedere la corrida", "Cantare canzoni k-pop"],
+    questionIta: "Quali di questi hobby preferisci?",
+    optionsIta: ["Giocare a calcio", "Guardare una corrida", "Cantare canzoni k-pop"],
   },
   {
-    question: "Scegli il cibo che preferisci tra questi",
-    options: ["The", "Paella", "Ramen con riso"],
+    questionIta: "Scegli il cibo che preferisci tra questi",
+    optionsIta: ["Tè", "Paella", "Ramen con riso"],
   },
   {
-    question: "Che tipo di clima preferisci?",
-    options: ["Freddo", "Caldo", "Primaverile"],
+    questionIta: "Che tipo di clima preferisci?",
+    optionsIta: ["Freddo", "Caldo", "Primaverile"],
   },
 ];
 
-let currentQuestionIndex = 0;
-let scores = [
-  { type: "Inglese", value: 0 },
-  { type: "Spagnolo", value: 0 },
-  { type: "Coreano", value: 0 },
-]; // Array per memorizzare i punteggi per ciascuna opzione
+let currentQuestionIndexIta = 0;
+let scoresIta = [
+  { typeIta: "Inglese", valueIta: 0 },
+  { typeIta: "Spagnolo", valueIta: 0 },
+  { typeIta: "Coreano", valueIta: 0 },
+];
 
-function displayQuestion() {
-  const currentQuestion = questions[currentQuestionIndex];
-  document.getElementById("question").innerText = currentQuestion.question;
+function displayQuestionIta() {
+  const currentQuestionIta = questionsIta[currentQuestionIndexIta];
+  document.getElementById("questionIta").innerText = currentQuestionIta.questionIta;
 
-  const optionsDiv = document.getElementById("options");
-  optionsDiv.innerHTML = "";
+  const optionsDivIta = document.getElementById("optionsIta");
+  optionsDivIta.innerHTML = "";
 
-  currentQuestion.options.forEach((option, index) => {
-    const button = document.createElement("button");
-    button.innerText = option;
-    button.onclick = () => {
-      scores[index].value++;
-      nextQuestion();
+  currentQuestionIta.optionsIta.forEach((optionIta, indexIta) => {
+    const buttonIta = document.createElement("button");
+    buttonIta.innerText = optionIta;
+    buttonIta.onclick = () => {
+      scoresIta[indexIta].valueIta++;
+      nextQuestionIta();
     };
-    optionsDiv.appendChild(button);
+    optionsDivIta.appendChild(buttonIta);
   });
 }
 
-function nextQuestion() {
-  currentQuestionIndex++;
-  if (currentQuestionIndex < questions.length) {
-    displayQuestion();
+function nextQuestionIta() {
+  currentQuestionIndexIta++;
+  if (currentQuestionIndexIta < questionsIta.length) {
+    displayQuestionIta();
   } else {
-    displayScore();
+    displayScoreIta();
   }
 }
 
-function displayScore() {
-  const maxScoreIndex = scores.findIndex(score => score.value === Math.max(...scores.map(score => score.value)));
-  document.getElementById("score").innerText = `La lingua giusta per te é: ${scores[maxScoreIndex].type}`;
-  document.getElementById("score").style.display = "block";
+function displayScoreIta() {
+  const maxScoreIndexIta = scoresIta.findIndex(scoreIta => scoreIta.valueIta === Math.max(...scoresIta.map(scoreIta => scoreIta.valueIta)));
+  document.getElementById("scoreIta").innerText = `La lingua giusta per te è: ${scoresIta[maxScoreIndexIta].typeIta}`;
+  document.getElementById("scoreIta").style.display = "block";
 }
 
-displayQuestion();
+displayQuestionIta();
+
+
