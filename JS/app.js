@@ -95,8 +95,6 @@ function prec(){
 
 setInterval(succ, 5000);
 
-
-
 const questionsIta = [
   {
     questionIta: "Che tipo di luoghi preferisci visitare?",
@@ -125,29 +123,31 @@ let scoresIta = [
 
 function displayQuestionIta() {
   const currentQuestionIta = questionsIta[currentQuestionIndexIta];
-  document.getElementById("questionIta").innerText = currentQuestionIta.questionIta;
+  if (currentQuestionIta) {
+    document.getElementById("questionIta").innerText = currentQuestionIta.questionIta;
 
-  const optionsDivIta = document.getElementById("optionsIta");
-  optionsDivIta.innerHTML = "";
+    const optionsDivIta = document.getElementById("optionsIta");
+    optionsDivIta.innerHTML = "";
 
-  currentQuestionIta.optionsIta.forEach((optionIta, indexIta) => {
-    const buttonIta = document.createElement("button");
-    buttonIta.innerText = optionIta;
-    buttonIta.onclick = () => {
-      scoresIta[indexIta].valueIta++;
-      nextQuestionIta();
-    };
-    optionsDivIta.appendChild(buttonIta);
-  });
+    currentQuestionIta.optionsIta.forEach((optionIta, indexIta) => {
+      const buttonIta = document.createElement("button");
+      buttonIta.innerText = optionIta;
+      buttonIta.onclick = () => {
+        scoresIta[indexIta].valueIta++;
+        nextQuestionIta();
+      };
+      optionsDivIta.appendChild(buttonIta);
+    });
+  } else {
+    document.getElementById("questionIta").style.display = "none";
+    document.getElementById("optionsIta").style.display = "none";
+    displayScoreIta();
+  }
 }
 
 function nextQuestionIta() {
   currentQuestionIndexIta++;
-  if (currentQuestionIndexIta < questionsIta.length) {
-    displayQuestionIta();
-  } else {
-    displayScoreIta();
-  }
+  displayQuestionIta();
 }
 
 function displayScoreIta() {
@@ -157,5 +157,6 @@ function displayScoreIta() {
 }
 
 displayQuestionIta();
+
 
 

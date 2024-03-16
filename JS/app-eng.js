@@ -26,29 +26,31 @@ const questionsEng = [
   
   function displayQuestionEng() {
     const currentQuestionEng = questionsEng[currentQuestionIndexEng];
-    document.getElementById("questionEng").innerText = currentQuestionEng.questionEng;
+    if (currentQuestionEng) {
+      document.getElementById("questionEng").innerText = currentQuestionEng.questionEng;
   
-    const optionsDivEng = document.getElementById("optionsEng");
-    optionsDivEng.innerHTML = "";
+      const optionsDivEng = document.getElementById("optionsEng");
+      optionsDivEng.innerHTML = "";
   
-    currentQuestionEng.optionsEng.forEach((optionEng, indexEng) => {
-      const buttonEng = document.createElement("button");
-      buttonEng.innerText = optionEng;
-      buttonEng.onclick = () => {
-        scoresEng[indexEng].valueEng++;
-        nextQuestionEng();
-      };
-      optionsDivEng.appendChild(buttonEng);
-    });
+      currentQuestionEng.optionsEng.forEach((optionEng, indexEng) => {
+        const buttonEng = document.createElement("button");
+        buttonEng.innerText = optionEng;
+        buttonEng.onclick = () => {
+          scoresEng[indexEng].valueEng++;
+          nextQuestionEng();
+        };
+        optionsDivEng.appendChild(buttonEng);
+      });
+    } else {
+      document.getElementById("questionEng").style.display = "none";
+      document.getElementById("optionsEng").style.display = "none";
+      displayScoreEng();
+    }
   }
   
   function nextQuestionEng() {
     currentQuestionIndexEng++;
-    if (currentQuestionIndexEng < questionsEng.length) {
-      displayQuestionEng();
-    } else {
-      displayScoreEng();
-    }
+    displayQuestionEng();
   }
   
   function displayScoreEng() {
