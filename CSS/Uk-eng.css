@@ -10,3 +10,17 @@
     top: calc(100%);
     left: 42.5%;
 }
+
+@media (max-width: 768px) {
+    #tendina-menù {
+      visibility: hidden;
+      width: auto;
+      background-color: var(--nav);
+      color: black;
+      text-align: center;
+      font-size: 15px;
+      position: absolute;
+      top: calc(100%);
+      left: 36%;
+    }
+}
