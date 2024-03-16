@@ -9,3 +9,23 @@
     top: calc(100%);
     left: 37.5%;
 }
+
+.quiz-container legend{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  
+  .quiz-container{
+    font-size: 25px;
+    border: dotted var(--nav);
+    height: 160px;
+    padding-top: 10px;
+  }
+  
+  .quiz-container button{
+    margin: 5px;
+    background-color: var(--nav);
+    padding: 2px;
+    font-size: 15px;
+  }

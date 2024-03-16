@@ -117,7 +117,7 @@ main {
 }
 
 #form-section{
-  margin-top: 270px;
+  margin-top: 450px;
   margin-bottom: 10px;
 }
 
@@ -131,6 +131,7 @@ main {
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 10px;
 }
 
 #img_slider {
@@ -189,6 +190,7 @@ label{
 .form-btn{
   background-color: var(--nav);
   margin-top: 5px;
+  padding: 3px;
 }
 
 footer {
@@ -265,4 +267,24 @@ video{
   width: 300px;
   text-shadow: 2px 2px #2180f1;
   padding-top: 10px;
+}
+
+.quiz-container legend{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.quiz-container{
+  font-size: 25px;
+  border: dotted var(--nav);
+  height: 160px;
+  padding-top: 10px;
+}
+
+.quiz-container button{
+  margin: 5px;
+  background-color: var(--nav);
+  padding: 2px;
+  font-size: 15px;
 }
