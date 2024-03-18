@@ -18,7 +18,7 @@
     src: url(Chapaza.ttf);
 }
 
-#NavSecondaria, #NavSecondaria button{
+#drop-menu{
     font-family: nav;
 }
 

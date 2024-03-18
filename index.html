@@ -11,24 +11,28 @@
     <header>
       <nav>
         <div id="NavPrimaria">
-          <img src="assets/LOGO.svg" class="logo" />
+          <img src="/assets/LOGO.svg" class="logo" />
           <div id="TextNav">
             <h1>I. S. K. SCHOOL</h1>
             <h2>TUTTI PER UNO</h2>
           </div>
           <article id="welcome-container"></article>
         </div>
-        <div id="NavSecondaria">
-          <button id="nostri-corsi" onclick="showOrHide()">I Nostri Corsi</button>
-          <div id="tendina-menù">
-            <a href="pagine/inglese.html"><img src="/assets/uk.jpg" class="icon-menù" />Inglese</a>
-            <a href="pagine/spagnolo.html"><img src="/assets/spain.jpg" class="icon-menù" />Spagnolo</a>
-            <a href="pagine/coreano.html"><img src="/assets/sk.jpg" class="icon-menù" />Coreano</a>
-          </div>
-          <a href="pagine/Sedi.html">Sedi</a>
-          <a href="pagine/Docenti.html">Docenti</a>
-          <a href="#form-section">Contattaci</a>
-          <a href="/pagine/index-eng.html"><img src="/assets/uk.jpg" class="language-icon" /></a>
+
+        <div id="drop-menu">
+          <ul id="menu">
+              <li><a href="#">I Nostri Corsi</a>
+                <ul>
+                  <li><a href="pagine/inglese.html"><img src="/assets/uk.jpg" class="icon-menù" />Inglese</a></li>
+                  <li><a href="pagine/spagnolo.html"><img src="/assets/spain.jpg" class="icon-menù" />Spagnolo</a></li>
+                  <li><a href="pagine/coreano.html"><img src="/assets/sk.jpg" class="icon-menù" />Coreano</a></li>
+                </ul>
+              </li>
+              <li><a href="pagine/Sedi.html">Sedi</a></li>
+            <li><a href="pagine/Docenti.html">Docenti</a></li>
+            <li><a href="#form-section">Contattaci</a></li>
+            <li><a href="/pagine/index-eng.html"><img src="/assets/uk.jpg" class="language-icon" /></a></li>
+          </ul>
         </div>
       </nav>
 
@@ -39,8 +43,6 @@
         />
       </video>
     </header>
-
-    <main>
       <section id="mainCorpo">
         <article id="chiSiamo">
           <article id="chiSiamoTitle">Chi siamo</article>
@@ -52,7 +54,7 @@
 
         <div id="slider">
           <div class="mov-btn">
-            <button onclick="prec()"><--</button>
+            <button onclick="prec()">&lt;--</button>
           </div>
 
           <div id="img_slider">
@@ -62,55 +64,51 @@
           </div>
 
           <div class="mov-btn">
-            <button onclick="succ()">--></button>
+            <button onclick="succ()">--&gt;</button>
           </div>
         </div>
-
+        
         <div class="quiz-container">
           <legend>Non sai quale lingua scegliere? Fai il nostro semplice quiz e scopri quella giusta per te!</legend>
           <div id="questionIta"></div>
           <div id="optionsIta"></div>
           <div id="scoreIta" style="display: none;"></div>
-        </div>        
+        </div>
+
+        <section id="form-section">
+          <form id="contact-form">
+          <div class="input-container">
+            <legend>FORM DI CONTATTO</legend>
+            <label for="name">Nome e cognome</label>
+            <input id="name" type="text" name="name" required />
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" required />
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="button" class="form-btn">Invia</button>
+          </div>
+        </form>
+        </section>
       </section>
-    </main>
-
-    <section id="form-section">
-      <form
-      action="https://formsubmit.co/giuseppebianconi2@gmail.com"
-      method="POST"
-      id="contact-form">
-      <div class="input-container">
-        <legend>FORM DI CONTATTO</legend>
-        <label for="name">Nome e cognome</label>
-        <input id="name" type="text" name="name" required />
-        <label for="email">E-mail</label>
-        <input id="email" type="email" name="email" required />
-        <label for="message">Messaggio</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="button" class="form-btn">Invia</button>
-      </div>
-    </form>
-    </section>
-
-    <footer>
-      <address class="footer-text">
-        Sede legale: Via Scipione l'africano, 28 - 70100 BARI
-      </address>
-      <article class="footer-text2">Realizzato dal Freezer&Sayan Team.</article>
-      <div class="all-icons">
-        <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
-          ><img src="/assets/facebook.png" class="footer-icons"
-        /></a>
-        <a href="https://www.instagram.com/apuliadigitalmaker/"
-          ><img src="/assets/instagram.png" class="footer-icons"
-        /></a>
-        <a
-          href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
-          ><img src="/assets/twitter.png" class="footer-icons"
-        /></a>
-      </div>
-    </footer>
+      
+      <footer>
+        <address class="footer-text">
+          Sede legale: Via Scipione l'africano, 28 - 70100 BARI
+        </address>
+        <article class="footer-text2">Realizzato dal Freezer&Sayan Team.</article>
+        <div class="all-icons">
+          <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
+            ><img src="/assets/facebook.png" class="footer-icons"
+          /></a>
+          <a href="https://www.instagram.com/apuliadigitalmaker/"
+            ><img src="/assets/instagram.png" class="footer-icons"
+          /></a>
+          <a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
+            ><img src="/assets/twitter.png" class="footer-icons"
+          /></a>
+        </div>
+      </footer>
 
     <script src="/JS/app.js"></script>
   </body>

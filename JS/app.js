@@ -1,31 +1,3 @@
-// Seleziona il pulsante
-const nostriCorsiBtn = document.getElementById("nostri-corsi");
-// Seleziona la tendina del menu
-const menuContainer = document.getElementById("tendina-menù");
-
-// Aggiungi un gestore di eventi per il clic sul pulsante
-nostriCorsiBtn.addEventListener("click", function () {
-  // Controlla se la tendina del menu è visibile o nascosta
-  if (menuContainer.style.visibility === "visible") {
-    // Se è visibile, nascondila
-    menuContainer.style.visibility = "hidden";
-  } else {
-    // Altrimenti, mostrala
-    menuContainer.style.visibility = "visible";
-  }
-});
-
-nostriCorsiBtn.addEventListener("mouseover", function () {
-  // Controlla se la tendina del menu è visibile o nascosta
-  if (menuContainer.style.visibility === "visible") {
-    // Se è visibile, nascondila
-    menuContainer.style.visibility = "hidden";
-  } else {
-    // Altrimenti, mostrala
-    menuContainer.style.visibility = "visible";
-  }
-});
-
 // Definisci un array di frasi da digitare
 var phrases = ["Benvenuto.", "Welcome.", "Bienvenido.", "환영."];
 
