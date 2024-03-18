@@ -130,5 +130,46 @@ function displayScoreIta() {
 
 displayQuestionIta();
 
+document.getElementById("input-container").addEventListener("submit", function(event) {
+  var nome = document.getElementById("nome").value;
+  var cognome = document.getElementById("cognome").value;
+  var sede = document.getElementById("sede").value;
+  var email = document.getElementById("email").value;
+  var lingua = document.getElementById("lingua").value;
 
+  if (nome === "" && cognome === "" && sede === "" && email === "" && lingua === "") {
+    alert("Tutti i campi sono obbligatori.");
+    event.preventDefault(); // Impedisce l'invio del form
+    return;
+}
+
+  // Validazione del campo nome
+  if (!/^[a-zA-Z]+$/.test(nome)) {
+      alert("Il campo Nome deve contenere solo lettere o non può essere vuoto.");
+      event.preventDefault(); // Impedisce l'invio del form
+      return;
+  }
+
+  // Validazione del campo cognome
+  if (!/^[a-zA-Z]+$/.test(cognome)) {
+      alert("Il campo Cognome deve contenere solo lettere o non può essere vuoto.");
+      event.preventDefault(); // Impedisce l'invio del form
+      return;
+  }
+
+    // Validazione del campo sede
+    if (sede === "") {
+      alert("Inserisci una sede.");
+      event.preventDefault(); // Impedisce l'invio del form
+      return;
+  }
+
+    // Validazione del campo lingua
+    if (lingua === "") {
+      alert("Inserisci una lingua.");
+      event.preventDefault(); // Impedisce l'invio del form
+      return;
+  }
+
+});
 

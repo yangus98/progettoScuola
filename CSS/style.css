@@ -103,8 +103,7 @@ ul#menu ul a:hover{
 }
 
 .logo{
-  width: 260px;
-  height: 200px;
+
 }
 
 #TextNav {
@@ -149,22 +148,15 @@ a{
   margin-bottom: 10px;
   padding: 10px;
   font-size: 20px;
+  background-image: url("/assets/books.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #chiSiamoTitle{
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 10px;
-}
-
-#form-section{
-  margin-top: 15px;
-}
-
-.input-container legend{
-  padding-bottom: 10px;
-  font-size: 25px;
-  font-weight:bold;
 }
 
 #slider{
@@ -196,9 +188,13 @@ a{
   color: black;
   cursor: pointer;
   background: var(--nav);
-  border-radius: 56px;
   font-size: 20px;
   margin: 5px;
+}
+
+#slider button:hover{
+  background-color: black;
+  color: var(--nav);
 }
 
 .mov-btn button{
@@ -207,20 +203,27 @@ a{
   align-items: center;
 }
 
-.input-container{
+#input-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
   padding: 10px;
+  font-size: 25px;
+  width:50%;
+  align-items: center;
+}
+
+#input-container legend{
+  font-weight: bold;
+}
+
+input, select{
+  background-color: var(--nav);
 }
 
 form{
-  margin-bottom: 10px;
-  width: max-content;
   border: dotted var(--nav);
-  margin: 0 auto;
+  
 }
 
 label{
@@ -235,18 +238,11 @@ label{
 
 footer{
   background-color: var(--footer);
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .footer-icons{
   width: 30px;
   height: 30px;
-  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -258,13 +254,20 @@ footer{
   text-align: center;
 }
 
+.all-icons{
+  height: 50px;
+}
+
 .footer-text{
   font-size: 19px;
+  padding-top: 5px;
 }
 
 .footer-text2{
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .language-div{
@@ -307,6 +310,9 @@ video{
   width: 300px;
   text-shadow: 2px 2px #2180f1;
   padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quiz-container legend{
@@ -317,23 +323,39 @@ video{
 
 .quiz-container{
   font-size: 25px;
+  width: 50%;
   border: dotted var(--nav);
-  padding-top: 10px;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.quiz-container button{
+.quiz-container button, #input-container button{
   margin: 5px;
   background-color: var(--nav);
-  padding: 2px;
+  padding: 5px;
   font-size: 15px;
+  width: max-content;
+}
+
+.quiz-container button:hover, #input-container button:hover{
+  background-color: black;
+  color: var(--nav);
+}
+
+#scoreIta{
+  display: none;
+}
+
+#pick-up-container{
+  display: flex;
+  justify-content: center;
+  background-image: url("/assets/books.png");
 }
 
 @media (max-width: 768px) {
   .logo{
-    width: 260px;
-    height: 200px;
-    margin-top: 40px;
-    margin-left: 20px;
   }
 
   #welcome-container{

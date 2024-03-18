@@ -31,7 +31,7 @@
               </li>
               <li><a href="/pagine/Sedi-eng.html">Locations</a></li>
             <li><a href="/pagine/Docenti-eng.html">Teachers</a></li>
-            <li><a href="#form-section">Contact us</a></li>
+            <li><a href="#input-container">Contact us</a></li>
             <li><a href="/index.html"><img src="/assets/italy.png" class="language-icon" /></a></li>
           </ul>
         </div>
@@ -57,7 +57,7 @@
 
         <div id="slider">
           <div class="mov-btn">
-            <button onclick="prec()"><--</button>
+            <button onclick="prec()">◀</button>
           </div>
 
           <div id="img_slider">
@@ -67,36 +67,54 @@
           </div>
 
           <div class="mov-btn">
-            <button onclick="succ()">--></button>
+            <button onclick="succ()">▶</button>
           </div>
         </div>
 
-         <div class="quiz-container">
-          <legend>Don't know which language to choose? Take our simple quiz and discover the right one for you!</legend>
-          <div id="questionEng"></div>
-          <div id="optionsEng"></div>
-          <div id="scoreEng" style="display: none;"></div>
-         </div>
+        <div id="pick-up-container">
+          <div class="quiz-container">
+            <legend>Not sure which language to choose? <br> Take our simple quiz and find out the right one for you!</legend>
+            <div id="questionEng"></div>
+            <div id="optionsEng"></div>
+            <div id="scoreEng"></div>
+          </div>
+        
+          <form id="input-container">
+            <legend>Contact Form</legend>
+            <div class="form-row">
+              <label for="nome">First Name:</label>
+              <input type="text" id="nome" name="nome">
+              <label for="cognome">Last Name:</label>
+              <input type="text" id="cognome" name="cognome">
+            </div>
+            <div class="form-row">
+              <label for="sede">Location:</label>
+              <select id="sede" name="sede">
+                <option value="">Select a location</option>
+                <option value="bari">Bari</option>
+                <option value="taranto">Taranto</option>
+                <option value="lecce">Lecce</option>
+                <option value="altamura">Altamura</option>
+              </select>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+            </div>
+        
+            <div class="form-row">
+              <label for="lingua">Selected Language:</label>
+              <select id="lingua" name="lingua">
+                <option value="">Select a language</option>
+                <option value="spagnolo">Spanish</option>
+                <option value="inglese">English</option>
+                <option value="coreano">Korean</option>
+              </select>
+            </div>
+        
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </section>
     </main>
-
-    <section id="form-section">
-      <form
-      action="https://formsubmit.co/giuseppebianconi2@gmail.com"
-      method="POST"
-      id="contact-form">
-      <div class="input-container">
-        <legend>CONTACT FORM</legend>
-        <label for="name">Name and Surname</label>
-        <input id="name" type="text" name="name" required />
-        <label for="email">E-mail</label>
-        <input id="email" type="email" name="email" required />
-        <label for="message">Message</label>
-        <textarea id="message" name="Message" required></textarea>
-        <button type="submit" class="form-btn">Send</button>
-      </div>
-    </form>
-    </section>
 
     <footer>
       <address class="footer-text">
