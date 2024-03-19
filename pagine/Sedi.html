@@ -10,18 +10,12 @@
   </head>
   <body>
     <nav>
-      <div id="NavPrimaria">
-        <img src="/assets/LOGO.svg" class="logo" />
-        <div id="TextNav">
-          <h1>I. S. K. SCHOOL</h1>
-          <h2>TUTTI PER UNO</h2>
-        </div>
-        <article id="welcome-container"></article>
-      </div>
+      <div id="parentDiv">
+        <script src="/JS/nav.js"></script>
+       </div>
 
       <div id="drop-menu">
         <ul id="menu">
-          <li><a href="/index.html">Homepage</a></li>
           <li>
             <a href="#">I Nostri Corsi</a>
             <ul>
@@ -45,78 +39,90 @@
           <li><a href="/pagine/Sedi.html">Sedi</a></li>
           <li><a href="/pagine/Docenti.html">Docenti</a></li>
           <li>
-            <a href="/pagine/inglese-eng.html"
+            <a href="/pagine/Sedi-eng.html"
               ><img src="/assets/uk.jpg" class="language-icon"
             /></a>
           </li>
+          <li><a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
+            ><img src="/assets/facebook-nav.svg" class="nav-icon" /></a></li>
+          <li><a href="https://www.instagram.com/apuliadigitalmaker/"
+            ><img src="/assets/instagram-nav.svg" class="nav-icon" /></a></li>
+          <li><a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
+            ><img src="/assets/twitter-nav.svg" class="nav-icon" /></a></li>
         </ul>
       </div>
     </nav>
-    <section id="styleSedi">
-      <div class="puglia-map">
-        <img src="/assets/puglia.jpg" usemap="#workmap" class="puglia-pic" />
-      </div>
-      <div class="map-description">
-        <article class="introduzioneSedi">
-          La nostra scuola ha varie sedi in tutte le provincie della Puglia:
-        </article>
-        <article class="Sede">
-          <a href="https://maps.app.goo.gl/6WbspFZtkyXcWbvj8">
-            <article>Sede Bari:</article>
-            Via Vittorio Veneto, 4 - 70124 Bari
-          </a>
-        </article>
-        <article class="Sede">
-          <a href="https://maps.app.goo.gl/6vbx2LupnxmLUMnW6">
-            <article>Sede Taranto:</article>
-            Lungomare Vittorio Emanuele III, 14 - 74121 Taranto</a
-          >
-        </article>
-        <article class="Sede">
-          <a href="https://maps.app.goo.gl/NpG9ZiibjzkdQoCa6"
-            ><article>Sede Brindisi:</article>
-            Corso Roma, 14 - 72100 Brindisi</a
-          >
-        </article>
-        <article class="Sede">
-          <a href="https://maps.app.goo.gl/hu2nYtPTMDX8BePr5">
-            <article>Sede Lecce:</article>
-            Viale Otranto, 27 - 73100 Lecce</a
-          >
-        </article>
-        <article class="Sede">
-          <a href="https://maps.app.goo.gl/K3LRh5Qbx3EGFYmw6">
-            <article>Sede Barletta:</article>
-            Via Cavour, 45 - 76121 Barletta</a
-          >
-        </article>
-        <article class="Sede">
-          <a href="https://maps.app.goo.gl/QA2sytRx8uVYXCENA"
-            ><article>Sede Foggia:</article>
-            Via Francesco Crispi, 64 - 71121 Foggia</a
-          >
-        </article>
-      </div>
-    </section>
 
-    <footer>
-      <address class="footer-text">
-        Sede legale: Via Vittorio Veneto, 4 - 70100 BARI
-      </address>
-      <article class="footer-text2">Realizzato dal Freezer&Sayan Team.</article>
-      <div class="all-icons">
-        <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
-          ><img src="/assets/facebook.png" class="footer-icons"
-        /></a>
-        <a href="https://www.instagram.com/apuliadigitalmaker/"
-          ><img src="/assets/instagram.png" class="footer-icons"
-        /></a>
-        <a
-          href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
-          ><img src="/assets/twitter.png" class="footer-icons"
-        /></a>
+    <div id="slider">
+      <div class="mov-btn">
+        <button onclick="prec()">◀</button>
       </div>
-    </footer>
+
+      <div id="img_slider">
+        <img src="/assets/prima.jpg" alt="" />
+        <img src="/assets/seconda.jpg" alt="" />
+        <img src="/assets/terza.jpg" alt="" />
+      </div>
+
+      <div class="mov-btn">
+        <button onclick="succ()">▶</button>
+      </div>
+    </div>
+    
+    <section id="styleSedi">
+      <article class="introduzioneSedi">
+        La nostra scuola ha varie sedi in tutte le provincie della Puglia:
+      </article>
+      <div class="map-description">
+          <article class="Sede">
+              <iframe src="https://maps.google.com/maps?q=Via%20Vittorio%20Veneto%2C%204%2C%2070100%20Bari%20BA%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+              <a href="https://maps.app.goo.gl/6WbspFZtkyXcWbvj8">
+                  Sede Bari:
+                  Via Vittorio Veneto, 4 - 70124
+              </a>
+          </article>
+          <article class="Sede">
+              <iframe src="https://maps.google.com/maps?q=Lungomare%20V.%20Emanuele%20III%2C%2014%2C%2074123%20Taranto%20TA%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+              <a href="https://maps.app.goo.gl/6vbx2LupnxmLUMnW6">
+                  Sede Taranto:
+                  Lungomare Vittorio Emanuele III, 14 - 74121
+              </a>
+          </article>
+          <article class="Sede">
+              <iframe src="https://maps.google.com/maps?q=Corso%20Roma%2C%2014%2C%2072100%20Brindisi%20BR%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+              <a href="https://maps.app.goo.gl/NpG9ZiibjzkdQoCa6">
+                  Sede Brindisi:
+                  Corso Roma, 14 - 72100
+              </a>
+          </article>
+          <article class="Sede">
+              <iframe src="https://maps.google.com/maps?q=Viale%20Otranto%2C%2027%2C%2073100%20Lecce%20LE%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+              <a href="https://maps.app.goo.gl/hu2nYtPTMDX8BePr5">
+                  Sede Lecce:
+                  Viale Otranto, 27 - 73100
+              </a>
+          </article>
+          <article class="Sede">
+              <iframe src="https://maps.google.com/maps?q=Via%20Cavour%2C%2045%2C%2076121%20Barletta%20BT%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+              <a href="https://maps.app.goo.gl/K3LRh5Qbx3EGFYmw6">
+                  Sede Barletta:
+                  Via Cavour, 45 - 76121
+              </a>
+          </article>
+          <article class="Sede">
+              <iframe src="https://maps.google.com/maps?q=Via%20Francesco%20Crispi%2C%2064%2C%2071121%20Foggia%20FG%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+              <a href="https://maps.app.goo.gl/QA2sytRx8uVYXCENA">
+                  Sede Foggia:
+                  Via Francesco Crispi, 64 - 71121
+              </a>
+          </article>
+      </div>
+  </section>
+
+    <div id="footer">
+      <script src="/JS/footer.js"></script>
+    </div>
     <script src="/JS/app.js"></script>
   </body>
 </html>

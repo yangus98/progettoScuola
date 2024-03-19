@@ -11,14 +11,9 @@
   <body>
     <header>
       <nav>
-        <div id="NavPrimaria">
-          <img src="/assets/LOGO.svg" class="logo" />
-          <div id="TextNav">
-            <h1>I. S. K. SCHOOL</h1>
-            <h2>TUTTI PER UNO</h2>
-          </div>
-          <article id="welcome-container"></article>
-        </div>
+        <div id="parentDiv">
+          <script src="/JS/nav.js"></script>
+         </div>
 
         <div id="drop-menu">
           <ul id="menu">
@@ -45,7 +40,7 @@
       </nav>
 
       <div class="big-image-container">
-        <div class="big-title">Supera i tuoi limiti e scopri il mondo: impara un lingua!</div>
+        <article class="big-title">Supera i tuoi limiti<br>e scopri il mondo:<br>impara una lingua!</article>
       </div>
     </header>
 
@@ -116,28 +111,12 @@
               
               <button type="submit">Invia</button>
             </form>
-        </div>
-        
+        </div>        
       </section>
-      
-      <footer>
-        <address class="footer-text">
-          Sede legale: Via Scipione l'africano, 28 - 70100 BARI
-        </address>
-        <div class="all-icons">
-          <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
-            ><img src="/assets/facebook.png" class="footer-icons"
-          /></a>
-          <a href="https://www.instagram.com/apuliadigitalmaker/"
-            ><img src="/assets/instagram.png" class="footer-icons"
-          /></a>
-          <a
-            href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
-            ><img src="/assets/twitter.png" class="footer-icons"
-          /></a>
-        </div>
-        <article class="footer-text2">Realizzato dal Freezer&Sayan Team.</article>
-      </footer>
+
+      <div id="footer">
+        <script src="/JS/footer.js"></script>
+      </div>
     <script src="/JS/app.js"></script>
   </body>
 </html>

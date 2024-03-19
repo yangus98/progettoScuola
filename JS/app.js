@@ -1,43 +1,3 @@
-// Definisci un array di frasi da digitare
-var phrases = ["Benvenuto.", "Welcome.", "Bienvenido.", "환영."];
-
-// Seleziona l'elemento HTML dove vuoi mostrare il testo
-var outputElement = document.getElementById("welcome-container");
-
-// Definisci la velocità di digitazione (in millisecondi per carattere)
-var typingSpeed = 90;
-// Definisci il tempo di pausa tra una frase e l'altra (in millisecondi)
-var pauseTime = 1000;
-
-// Funzione per l'effetto di scrittura automatica
-function typePhrases(phrases, index) {
-  var text = phrases[index % phrases.length]; // Utilizza l'operatore modulo per ciclare attraverso l'array
-  typeWriter(text, 0, function () {
-    setTimeout(function () {
-      outputElement.innerHTML = "";
-      typePhrases(phrases, index + 1); // Passa all'indice successivo
-    }, pauseTime);
-  });
-}
-
-// Funzione per l'effetto di scrittura automatica di una singola frase
-function typeWriter(text, index, callback) {
-  if (index < text.length) {
-    outputElement.innerHTML += text.charAt(index);
-    index++;
-    setTimeout(function () {
-      typeWriter(text, index, callback);
-    }, typingSpeed);
-  } else {
-    if (callback) {
-      callback();
-    }
-  }
-}
-
-// Avvia l'effetto di scrittura automatica delle frasi
-typePhrases(phrases, 0);
-
 var n_img = 3;
 var corrente = 1;
 
@@ -174,4 +134,6 @@ document.getElementById("input-container").addEventListener("submit", function(e
   }
 
 });
+
+
 

@@ -11,14 +11,9 @@
   <body>
     <header>
       <nav>
-        <div id="NavPrimaria">
-          <img src="/assets/LOGO.svg" class="logo" />
-          <div id="TextNav">
-            <h1>I. S. K. SCHOOL</h1>
-            <h2>ONE FOR ALL</h2>
-          </div>
-          <article id="welcome-container"></article>
-        </div>
+        <div id="parentDiv">
+          <script src="/JS/nav.js"></script>
+         </div>
 
         <div id="drop-menu">
           <ul id="menu">
@@ -33,16 +28,20 @@
             <li><a href="/pagine/Docenti-eng.html">Teachers</a></li>
             <li><a href="#input-container">Contact us</a></li>
             <li><a href="/index.html"><img src="/assets/italy.png" class="language-icon" /></a></li>
+            <li><a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
+              ><img src="/assets/facebook-nav.svg" class="nav-icon" /></a></li>
+            <li><a href="https://www.instagram.com/apuliadigitalmaker/"
+              ><img src="/assets/instagram-nav.svg" class="nav-icon" /></a></li>
+            <li><a
+              href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
+              ><img src="/assets/twitter-nav.svg" class="nav-icon" /></a></li>
           </ul>
         </div>
       </nav>
 
-      <video autoplay muted loop>
-        <source
-          src="/assets/Teacher Teaching the Students HD Stock Videos  Free stock footage  Free HD Videos - No Copyright.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <div class="big-image-container">
+        <article class="big-title">Overcome your limits<br> and discover the world:<br>learn a language!</article>
+      </div>
     </header>
 
     <main>
@@ -116,24 +115,9 @@
       </section>
     </main>
 
-    <footer>
-      <address class="footer-text">
-        Registered office: Via Scipione l'africano, 28 - 70100 BARI
-      </address>
-      <article class="footer-text2">Realized by Freezer&Sayan Team.</article>
-      <div class="all-icons">
-        <a href="https://www.facebook.com/apuliadigitalmaker/?locale=it_IT"
-          ><img src="/assets/facebook.png" class="footer-icons"
-        /></a>
-        <a href="https://www.instagram.com/apuliadigitalmaker/"
-          ><img src="/assets/instagram.png" class="footer-icons"
-        /></a>
-        <a
-          href="https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM"
-          ><img src="/assets/twitter.png" class="footer-icons"
-        /></a>
-      </div>
-    </footer>
+    <div id="footer">
+      <script src="/JS/footer.js"></script>
+    </div>
 
     <script src="/JS/app.js"></script>
     <script src="/JS/app-eng.js"></script>
