@@ -141,7 +141,9 @@ document.getElementById("input-container").addEventListener("submit", function(e
     alert("Tutti i campi sono obbligatori.");
     event.preventDefault(); // Impedisce l'invio del form
     return;
-}
+  }else{
+    alert("Form inviato.");
+  }
 
   // Validazione del campo nome
   if (!/^[a-zA-Z]+$/.test(nome)) {

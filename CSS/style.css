@@ -115,6 +115,11 @@ ul#menu ul a:hover{
   color: black;
 }
 
+.nav-icon{
+  width: 22px;
+  height: 22px;
+}
+
 h1{
   font-size: 65px;
   text-shadow: 2px 2px #2180f1;
@@ -123,6 +128,10 @@ h1{
 h2{
   font-size: 35px;
   text-shadow: 2px 2px #2180f1;
+}
+
+hr{
+  color: black;
 }
 
 .icon-menù{
@@ -139,24 +148,42 @@ a{
 
 #mainCorpo {
   width: 100%;
-  padding: 20px;
   text-align: center;
 }
 
 #chiSiamo{
-  border: dotted var(--nav);
   margin-bottom: 10px;
-  padding: 10px;
   font-size: 20px;
   background-image: url("/assets/books.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #chiSiamoTitle{
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+.big-image-container{
+  background-image: url("/assets/header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.big-title{
+  background-color: rgba(84,83,83,0.3);
+  color: white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 60px;
 }
 
 #slider{
@@ -171,9 +198,9 @@ a{
 }
 
 #img_slider img{
-  width: 100%;
-  height: 650px;
   display: none;
+  width: 100%;
+  height: 450px;
 }
 
 #img_slider img:nth-child(1){
@@ -222,8 +249,6 @@ input, select{
 }
 
 form{
-  border: dotted var(--nav);
-  
 }
 
 label{
@@ -255,7 +280,10 @@ footer{
 }
 
 .all-icons{
-  height: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text{
@@ -265,8 +293,6 @@ footer{
 
 .footer-text2{
   font-size: 15px;
-  margin-top: 5px;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -324,7 +350,6 @@ video{
 .quiz-container{
   font-size: 25px;
   width: 50%;
-  border: dotted var(--nav);
   border-right: none;
   display: flex;
   flex-direction: column;
