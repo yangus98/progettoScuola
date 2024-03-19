@@ -1,0 +1,38 @@
+.Sede article {
+  font-weight: bold;
+}
+.Sede {
+  margin-bottom: 10px;
+}
+.introduzioneSedi {
+  font-size: 20px;
+}
+#styleSedi {
+  margin: 5px;
+  display: flex;
+}
+.puglia-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#styleSedi div{
+    width: 50%;
+}
+.Sede:hover{
+    background-color: var(--nav);
+}
+
+.introduzioneSedi{
+    margin-bottom: 10px;
+}
+.puglia-pic {
+    width: 400px;
+    height: 300px;
+}
+
+.map-description{
+    padding: 20px;
+}
