@@ -194,7 +194,7 @@ main{
 #img_slider img{
   display: none;
   width: 100%;
-  height: 450px;
+  height: 300px;
 }
 
 #img_slider img:nth-child(1){
@@ -241,9 +241,6 @@ input, select{
   background-color: var(--nav);
 }
 
-form{
-}
-
 label{
   font-size: 20px;
 }
@@ -281,12 +278,13 @@ footer{
 
 .footer-text{
   font-size: 19px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .footer-text2{
   font-size: 15px;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .language-div{
