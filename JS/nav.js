@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // creo LOGO
     let logoImg = document.createElement('img');
-    logoImg.src = '/assets/LOGO.svg';
+    logoImg.src = '/assets/logo.svg';
     logoImg.classList.add('logo');
 
        // Aggiungi un event listener per il mouseover sull'immagine del logo

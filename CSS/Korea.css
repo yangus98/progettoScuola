@@ -46,32 +46,9 @@ td{
     margin-top: 5px;
 }
 
-#tendina-menù {
-    visibility: hidden;
-    width: 100px;
-    height: 53px;
-    background-color: var(--nav);
-    color: black;
-    text-align: center;
-    font-size: 15px;
-    position: absolute;
-    left: 44%;
-}
-
 footer{
     margin-top: 0px;
 }
 
 @media (max-width: 768px) {
-    #tendina-menù {
-        visibility: hidden;
-        width: auto;
-        background-color: var(--nav);
-        color: black;
-        text-align: center;
-        font-size: 15px;
-        position: absolute;
-        top: calc(100%);
-        left: 38.5%;
-    }
 }
