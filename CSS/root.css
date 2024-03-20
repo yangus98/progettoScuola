@@ -8,22 +8,8 @@
     src: url(louis.ttf);
 }
 
-@font-face{
-    font-family: nav-title;
-    src: url(Belgiano.ttf);
-}
-
-@font-face{
-    font-family: auto-type;
-    src: url(Chapaza.ttf);
-}
-
 #drop-menu{
     font-family: nav;
-}
-
-#TextNav{
-    font-family: nav-title;
 }
 
 *{

@@ -54,75 +54,78 @@
       </div>
     </nav>
 
-    <div id="slider">
-      <div class="mov-btn">
-        <button onclick="prec()">◀</button>
-      </div>
+    <article class="introduzioneSedi">
+      La nostra scuola ha varie sedi in tutte le provincie della Puglia:
+    </article>
 
-      <div id="img_slider">
-        <img src="/assets/prima.jpg" alt="" />
-        <img src="/assets/seconda.jpg" alt="" />
-        <img src="/assets/terza.jpg" alt="" />
+    <section id="map-corpo">
+      <div class="puglia-container">
+        <img src="/assets/seconda.jpg" class="puglia-pic" alt="mappa delle sedi">
       </div>
+      
+      <div id="slider-iframe">
+        <div class="mov-btn-iframe">
+          <button onclick="prec-iframe()">◀</button>
+        </div>
+        <div id="iframe-slider">
+          <div class="map-description">
+            <article class="Sede">
+                <iframe src="https://maps.google.com/maps?q=Via%20Vittorio%20Veneto%2C%204%2C%2070100%20Bari%20BA%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://maps.app.goo.gl/6WbspFZtkyXcWbvj8">
+                    Sede Bari:
+                    Via Vittorio Veneto, 4 - 70124
+                </a>
+            </article>
+            <article class="Sede">
+                <iframe src="https://maps.google.com/maps?q=Lungomare%20V.%20Emanuele%20III%2C%2014%2C%2074123%20Taranto%20TA%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://maps.app.goo.gl/6vbx2LupnxmLUMnW6">
+                    Sede Taranto:
+                    Lungomare Vittorio Emanuele III, 14 - 74121
+                </a>
+            </article>
+            <article class="Sede">
+                <iframe src="https://maps.google.com/maps?q=Corso%20Roma%2C%2014%2C%2072100%20Brindisi%20BR%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://maps.app.goo.gl/NpG9ZiibjzkdQoCa6">
+                    Sede Brindisi:
+                    Corso Roma, 14 - 72100
+                </a>
+            </article>
+            <article class="Sede">
+                <iframe src="https://maps.google.com/maps?q=Viale%20Otranto%2C%2027%2C%2073100%20Lecce%20LE%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://maps.app.goo.gl/hu2nYtPTMDX8BePr5">
+                    Sede Lecce:
+                    Viale Otranto, 27 - 73100
+                </a>
+            </article>
+            <article class="Sede">
+                <iframe src="https://maps.google.com/maps?q=Via%20Cavour%2C%2045%2C%2076121%20Barletta%20BT%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://maps.app.goo.gl/K3LRh5Qbx3EGFYmw6">
+                    Sede Barletta:
+                    Via Cavour, 45 - 76121
+                </a>
+            </article>
+            <article class="Sede">
+                <iframe src="https://maps.google.com/maps?q=Via%20Francesco%20Crispi%2C%2064%2C%2071121%20Foggia%20FG%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://maps.app.goo.gl/QA2sytRx8uVYXCENA">
+                    Sede Foggia:
+                    Via Francesco Crispi, 64 - 71121
+                </a>
+            </article>
+        </div>
+        </div>
+  
+        <div class="mov-btn-iframe2">
+          <button onclick="succ-iframe()">▶</button>
+        </div>
+      </div>
+    </section>
 
-      <div class="mov-btn">
-        <button onclick="succ()">▶</button>
-      </div>
-    </div>
-    
-    <section id="styleSedi">
-      <article class="introduzioneSedi">
-        La nostra scuola ha varie sedi in tutte le provincie della Puglia:
-      </article>
-      <div class="map-description">
-          <article class="Sede">
-              <iframe src="https://maps.google.com/maps?q=Via%20Vittorio%20Veneto%2C%204%2C%2070100%20Bari%20BA%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-              <a href="https://maps.app.goo.gl/6WbspFZtkyXcWbvj8">
-                  Sede Bari:
-                  Via Vittorio Veneto, 4 - 70124
-              </a>
-          </article>
-          <article class="Sede">
-              <iframe src="https://maps.google.com/maps?q=Lungomare%20V.%20Emanuele%20III%2C%2014%2C%2074123%20Taranto%20TA%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-              <a href="https://maps.app.goo.gl/6vbx2LupnxmLUMnW6">
-                  Sede Taranto:
-                  Lungomare Vittorio Emanuele III, 14 - 74121
-              </a>
-          </article>
-          <article class="Sede">
-              <iframe src="https://maps.google.com/maps?q=Corso%20Roma%2C%2014%2C%2072100%20Brindisi%20BR%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-              <a href="https://maps.app.goo.gl/NpG9ZiibjzkdQoCa6">
-                  Sede Brindisi:
-                  Corso Roma, 14 - 72100
-              </a>
-          </article>
-          <article class="Sede">
-              <iframe src="https://maps.google.com/maps?q=Viale%20Otranto%2C%2027%2C%2073100%20Lecce%20LE%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-              <a href="https://maps.app.goo.gl/hu2nYtPTMDX8BePr5">
-                  Sede Lecce:
-                  Viale Otranto, 27 - 73100
-              </a>
-          </article>
-          <article class="Sede">
-              <iframe src="https://maps.google.com/maps?q=Via%20Cavour%2C%2045%2C%2076121%20Barletta%20BT%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-              <a href="https://maps.app.goo.gl/K3LRh5Qbx3EGFYmw6">
-                  Sede Barletta:
-                  Via Cavour, 45 - 76121
-              </a>
-          </article>
-          <article class="Sede">
-              <iframe src="https://maps.google.com/maps?q=Via%20Francesco%20Crispi%2C%2064%2C%2071121%20Foggia%20FG%2C%20Italy&output=embed" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-              <a href="https://maps.app.goo.gl/QA2sytRx8uVYXCENA">
-                  Sede Foggia:
-                  Via Francesco Crispi, 64 - 71121
-              </a>
-          </article>
-      </div>
-  </section>
+
 
     <div id="footer">
       <script src="/JS/footer.js"></script>
     </div>
     <script src="/JS/app.js"></script>
+    <script src="/JS/sedi.js"></script>
   </body>
 </html>
