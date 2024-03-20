@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let logoImg = document.createElement('img');
     logoImg.src = '/assets/logo.svg';
     logoImg.title = "Torna alla Homepage";
+    logoImg.alt = "Logo Homepage"
     logoImg.classList.add('logo');
 
        // Aggiungi un event listener per il mouseover sull'immagine del logo
