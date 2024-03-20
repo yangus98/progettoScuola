@@ -134,6 +134,3 @@ document.getElementById("input-container").addEventListener("submit", function(e
   }
 
 });
-
-
-
