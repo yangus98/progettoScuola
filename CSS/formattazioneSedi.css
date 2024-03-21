@@ -63,3 +63,18 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media only screen and (max-width: 767px) {
+  #map-corpo{
+    display: block;
+  }
+
+  .Sede iframe {
+    width: 100%;
+  }
+
+  .puglia-pic{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
