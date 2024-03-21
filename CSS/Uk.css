@@ -1,7 +1,7 @@
 .imgUk {
-    margin-top: 3px;
-    margin-bottom: auto;
-    margin-left: 3px;
+   margin-top: 3px;
+   margin-bottom: auto;
+   margin-left: 3px;
    width: 200px;
    height: 400px;
    align-self: auto;
@@ -48,12 +48,11 @@ td{
 
 @media only screen and (max-width: 767px) {
     .imgUk {
-        display: none;
+        width: 100%;
     }
 
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+    .IMGDescription{
+        display: block;
+        margin-bottom: 3px;
     }
 }

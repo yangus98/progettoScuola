@@ -51,12 +51,11 @@ td{
 
 @media only screen and (max-width: 767px) {
     .imgSpain {
-        display: none;
+        width: 100%
     }
 
-    footer{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+    .IMGDescription{
+        display: block;
+        margin-bottom: 3px;
     }
 }
