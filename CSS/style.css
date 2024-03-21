@@ -399,3 +399,212 @@ footer{
     font-size: 25px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+
+  *{
+    font-size: 15px;
+  }
+
+  h1{
+    font-size: 20px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  .nav-icon{
+    width: 15px;
+    height: 15px;
+  }
+
+  ul#menu li a{
+    float: left;
+    padding: 0;
+    padding-top: 4px;
+    padding-left: 10px;
+    
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration:none;
+  }
+
+  ul#menu{
+    padding: 0;
+    list-style: none;
+    background-color: var(--primario);
+    display: flex;
+    justify-content: center;
+    height: 25px;
+  }
+
+  .big-image-container{
+    background-image: url("/assets/header-img.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .big-title{
+    background-color: rgba(84,83,83,0.3);
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #chiSiamo{
+    margin-bottom: 5px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  #slider{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  #img_slider{
+    width: 100%;
+  }
+  
+  #img_slider img{
+    display: none;
+    width: 100%;
+    height: 80px;
+  }
+
+  #slider button{
+    width: 20px;
+    height: 20px;
+    border: solid black 2px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    background: var(--nav);
+    margin: 5px;
+  }
+
+  #welcome-container{
+    font-size: 15px;
+    width: 100px;
+    text-shadow: 2px 2px #2180f1;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #input-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label{
+    font-size: 15px;
+  }
+
+  input, select{
+    height: 20px;
+  }
+
+  .quiz-container{
+    border-right: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .quiz-container legend{
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .big-title{
+    background-color: rgba(84,83,83,0.3);
+    color: white;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  #chiSiamoTitle{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  footer{
+    background-color: var(--footer);
+    color: #ffffff;
+  }
+  
+  .footer-icons{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 10px;
+  }
+  
+  .all-icons,
+  .footer-text,
+  .footer-text2
+  {
+    text-align: center;
+  }
+  
+  .all-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-text{
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  
+  .footer-text2{
+    font-size: 10px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  #pick-up-container{
+    display: block;
+    background-color: white;
+  }
+
+  ul#menu ul{
+    display:inline-block;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    z-index:2;
+    background: #444;
+    text-transform: uppercase;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    width: 100%;
+  }
+}
