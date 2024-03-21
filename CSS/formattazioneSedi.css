@@ -59,11 +59,6 @@
   align-items: center;
 }
 
-.puglia-pic{
-  width: 700px;
-  height: 400px;
-}
-
 #map-corpo{
   display: flex;
   justify-content: space-around;
