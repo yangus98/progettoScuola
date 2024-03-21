@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Crea l'indirizzo
     const address = document.createElement('address');
     address.classList.add('footer-text');
-    address.textContent = "Sede legale: Via Scipione l'africano, 28 - 70100 BARI";
+    address.textContent = "Sede legale: Via Vittorio Veneto, 4 - 70124 BARI";
 
     // Crea il div per gli icon
     const allIcons = document.createElement('div');
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const facebookLink = document.createElement('a');
     facebookLink.href = "https://www.facebook.com/apuliadigitalmaker/?locale=it_IT";
     const facebookIcon = document.createElement('img');
-    facebookIcon.src = "/assets/facebook.png";
+    facebookIcon.src = "/assets/facebook-nav.svg";
     facebookIcon.alt = "icona facebook";
     facebookIcon.classList.add('footer-icons');
     facebookLink.appendChild(facebookIcon);
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const instagramLink = document.createElement('a');
     instagramLink.href = "https://www.instagram.com/apuliadigitalmaker/";
     const instagramIcon = document.createElement('img');
-    instagramIcon.src = "/assets/instagram.png";
+    instagramIcon.src = "/assets/instagram-nav.svg";
     instagramIcon.alt = "icona instagram";
     instagramIcon.classList.add('footer-icons');
     instagramLink.appendChild(instagramIcon);
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const twitterLink = document.createElement('a');
     twitterLink.href = "https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM";
     const twitterIcon = document.createElement('img');
-    twitterIcon.src = "/assets/twitter.png";
+    twitterIcon.src = "/assets/twitter-nav.svg";
     twitterIcon.alt = "icona twitter";
     twitterIcon.classList.add('footer-icons');
     twitterLink.appendChild(twitterIcon);
