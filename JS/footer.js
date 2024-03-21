@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     facebookLink.href = "https://www.facebook.com/apuliadigitalmaker/?locale=it_IT";
     const facebookIcon = document.createElement('img');
     facebookIcon.src = "/assets/facebook.png";
+    facebookIcon.alt = "icona facebook";
     facebookIcon.classList.add('footer-icons');
     facebookLink.appendChild(facebookIcon);
 
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     instagramLink.href = "https://www.instagram.com/apuliadigitalmaker/";
     const instagramIcon = document.createElement('img');
     instagramIcon.src = "/assets/instagram.png";
+    instagramIcon.alt = "icona instagram";
     instagramIcon.classList.add('footer-icons');
     instagramLink.appendChild(instagramIcon);
 
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     twitterLink.href = "https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM";
     const twitterIcon = document.createElement('img');
     twitterIcon.src = "/assets/twitter.png";
+    twitterIcon.alt = "icona twitter";
     twitterIcon.classList.add('footer-icons');
     twitterLink.appendChild(twitterIcon);
 

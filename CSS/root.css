@@ -24,8 +24,7 @@ body{
 }
 
 :root{
-    --primario: #9381FF;
+    --primario: #3D29FF;
     --nav: rgb(244, 211, 3);
-    --midnav: #93b1f1;
     --footer: #93b1f1;
 }
