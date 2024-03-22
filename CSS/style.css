@@ -122,12 +122,12 @@ ul#menu ul a:hover{
 
 h1{
   font-size: 65px;
-  text-shadow: 2px 2px #2180f1;
+  text-shadow: 2px 2px #ffffff;
 }
 
 h2{
   font-size: 35px;
-  text-shadow: 2px 2px #2180f1;
+  text-shadow: 2px 2px #ffffff;
 }
 
 hr{
@@ -312,7 +312,7 @@ footer{
 #welcome-container{
   font-size: 35px;
   width: 300px;
-  text-shadow: 2px 2px #2180f1;
+  text-shadow: 2px 2px #ffffff;
   padding-top: 10px;
   display: flex;
   align-items: center;
@@ -373,7 +373,7 @@ footer{
     font-size: 35px;
     font-family: auto-type;
     width: 300px;
-    text-shadow: 2px 2px #2180f1;
+    text-shadow: 2px 2px #ffffff;
   }
 
   .big-image-container{
@@ -495,7 +495,7 @@ footer{
   #welcome-container{
     font-size: 15px;
     width: 100px;
-    text-shadow: 2px 2px #2180f1;
+    text-shadow: 2px 2px #ffffff;
     padding-top: 10px;
     display: flex;
     align-items: center;
