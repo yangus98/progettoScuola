@@ -122,10 +122,12 @@ ul#menu ul a:hover{
 
 h1{
   font-size: 65px;
+  font-weight: bolder;
 }
 
 h2{
   font-size: 35px;
+  font-weight: bolder;
 }
 
 hr{
@@ -314,6 +316,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bolder;
 }
 
 .quiz-container legend{
@@ -360,16 +363,19 @@ footer{
 
   h1{
     font-size: 30px;
+    font-weight: bolder;
   }
 
   h2{
     font-size: 25px;
+    font-weight: bolder;
   }
 
   #welcome-container{
     font-size: 35px;
     font-family: auto-type;
     width: 300px;
+    font-weight: bolder;
   }
 
   .big-image-container{
@@ -390,10 +396,12 @@ footer{
 
   h1{
     font-size: 35px;
+    font-weight: bolder;
   }
 
   h2{
     font-size: 25px;
+    font-weight: bolder;
   }
 }
 
@@ -405,10 +413,12 @@ footer{
 
   h1{
     font-size: 20px;
+    font-weight: bolder;
   }
 
   h2{
     font-size: 15px;
+    font-weight: bolder;
   }
 
   .nav-icon{
@@ -495,6 +505,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bolder;
   }
 
   #input-container{
