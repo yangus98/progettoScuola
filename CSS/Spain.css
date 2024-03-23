@@ -23,7 +23,6 @@
     font-weight: bold;
     font-size: larger;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
 
 .Table {
@@ -51,11 +50,31 @@ td{
 
 @media only screen and (max-width: 767px) {
     .imgSpain {
-        width: 98%
+        width: 98%;
     }
 
     .IMGDescription{
         display: block;
         margin-bottom: 3px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    .imgSpain {
+        width: 95%;
+        height: 55vh;
+    }
+
+    .IMGDescription{
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .IMGDescription div{
+        text-align: center;
+    }
+
+    article{
+        font-size: 30px;
     }
 }

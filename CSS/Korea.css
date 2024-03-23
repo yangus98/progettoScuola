@@ -19,9 +19,10 @@
     -webkit-text-stroke-color: rgb(255, 0, 0);
 }
 .Saluto {
-    color:red;
-    font-size: small;
-    
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Table {
@@ -46,10 +47,6 @@ td{
     margin-top: 5px;
 }
 
-footer{
-    margin-top: 0px;
-}
-
 @media only screen and (max-width: 767px) {
     .imgKorea {
         width: 98%;
@@ -58,5 +55,25 @@ footer{
     .IMGDescription{
         display: block;
         margin-bottom: 3px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    .imgKorea {
+        width: 95%;
+        height: 55vh;
+    }
+
+    .IMGDescription{
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .IMGDescription div{
+        text-align: center;
+    }
+
+    article{
+        font-size: 30px;
     }
 }

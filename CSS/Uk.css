@@ -20,7 +20,9 @@
 }
 .Saluto {
     color:rgb(0, 0, 255);
-    font-size: 20px;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Table {
@@ -54,5 +56,25 @@ td{
     .IMGDescription{
         display: block;
         margin-bottom: 3px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+    .imgUk {
+        width: 95%;
+        height: 55vh;
+    }
+
+    .IMGDescription{
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    .IMGDescription div{
+        text-align: center;
+    }
+
+    article{
+        font-size: 30px;
     }
 }
