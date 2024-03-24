@@ -12,7 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Aggiungi un event listener per il click sull'immagine del logo
   logoImg.addEventListener("click", function () {
-    window.location.href = "../index.html"; // Reindirizza alla pagina index.html
+    var lang = document.documentElement.lang;
+
+    if(lang === "it"){
+      window.location.href = "../index.html";
+    }else{
+      window.location.href = "../pagine/index-eng.html";
+    }
   });
 
   let textNav = document.createElement("div");
