@@ -167,7 +167,7 @@ main{
 }
 
 .big-image-container{
-  background-image: url("/assets/header-img.jpg");
+  background-image: url("/assets/header-img.avif");
   background-repeat: no-repeat;
   width: 100%;
   height: 600px;
