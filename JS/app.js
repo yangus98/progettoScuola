@@ -143,4 +143,10 @@ document.getElementById("input-container").addEventListener("submit", function(e
       return;
   }
 
+  if (email === "") {
+    alert("Inserisci un email.");
+    event.preventDefault(); // Impedisce l'invio del form
+    return;
+}
+
 });
