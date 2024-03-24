@@ -10,6 +10,10 @@ ul, li{
   list-style: none;
 }
 
+.logo{
+  cursor: pointer;
+}
+
 ul#menu{
   padding: 0;
   list-style: none;
