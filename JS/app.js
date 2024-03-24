@@ -37,12 +37,24 @@ const questionsIta = [
     optionsIta: ["Giocare a calcio", "Guardare una corrida", "Cantare canzoni k-pop"],
   },
   {
-    questionIta: "Scegli il cibo che preferisci tra questi",
-    optionsIta: ["Tè", "Paella", "Ramen con riso"],
+    questionIta: "Scegli cibo preferisci tra questi?",
+    optionsIta: ["Tè", "Paella", "Ramen"],
   },
   {
-    questionIta: "Che tipo di clima preferisci?",
+    questionIta: "Che tipo di clima preferisci tra questi?",
     optionsIta: ["Freddo", "Caldo", "Primaverile"],
+  },
+  {
+    questionIta: "Quale calciatore preferisci tra questi?",
+    optionsIta: ["Harry Kane", "Fernando Torres", "Son Heung-min"],
+  },
+  {
+    questionIta: "Quale cantante preferisci tra questi?",
+    optionsIta: ["David Bowie", "Enrique Iglesias", "PSY"],
+  },
+  {
+    questionIta: "Quale attore preferisci tra questi?",
+    optionsIta: ["Emma Watson", "Pedro Alonso", "Lee Min-ho"],
   },
 ];
 
