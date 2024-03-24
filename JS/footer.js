@@ -5,8 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Crea l'indirizzo
     const address = document.createElement('address');
     address.classList.add('footer-text');
-    address.textContent = "Sede legale: Via Vittorio Veneto, 4 - 70124 BARI";
+    var lang = document.documentElement.lang;
 
+    if(lang === "it"){
+        address.textContent = "Sede legale: Via Vittorio Veneto, 4 - 70124 BARI";
+    }else{
+        address.textContent = "Registered office: Via Vittorio Veneto, 4 - 70124 BARI";
+    }
     // Crea il div per gli icon
     const allIcons = document.createElement('div');
     allIcons.classList.add('all-icons');
@@ -16,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     facebookLink.href = "https://www.facebook.com/apuliadigitalmaker/?locale=it_IT";
     const facebookIcon = document.createElement('img');
     facebookIcon.src = "/assets/facebook-nav.svg";
-    facebookIcon.alt = "icona facebook";
+    facebookIcon.alt = "facebook";
     facebookIcon.classList.add('footer-icons');
     facebookLink.appendChild(facebookIcon);
 
@@ -24,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     instagramLink.href = "https://www.instagram.com/apuliadigitalmaker/";
     const instagramIcon = document.createElement('img');
     instagramIcon.src = "/assets/instagram-nav.svg";
-    instagramIcon.alt = "icona instagram";
+    instagramIcon.alt = "instagram";
     instagramIcon.classList.add('footer-icons');
     instagramLink.appendChild(instagramIcon);
 
@@ -32,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     twitterLink.href = "https://twitter.com/i/flow/login?redirect_after_login=%2FApuliaDigitalM";
     const twitterIcon = document.createElement('img');
     twitterIcon.src = "/assets/twitter-nav.svg";
-    twitterIcon.alt = "icona twitter";
+    twitterIcon.alt = "twitter";
     twitterIcon.classList.add('footer-icons');
     twitterLink.appendChild(twitterIcon);
 
@@ -44,8 +49,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // Crea l'articolo per il testo aggiuntivo
     const footerText = document.createElement('article');
     footerText.classList.add('footer-text2');
-    footerText.textContent = "Realizzato dal Freezer&Sayan Team.";
-
+    if(lang === "it"){
+        footerText.textContent = "Realizzato dal Freezer&Sayan Team.";
+    }else{
+        footerText.textContent = "Realized by Freezer&Sayan Team.";
+    }
     // Aggiungi tutti gli elementi al footer
     footer.appendChild(address);
     footer.appendChild(allIcons);

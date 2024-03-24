@@ -6,7 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
   // creo LOGO
   let logoImg = document.createElement("img");
   logoImg.src = "/assets/logo.svg";
-  logoImg.title = "Torna alla Homepage";
+
+  if(lang === "it"){
+    logoImg.title = "Torna alla Homepage";
+  }else{
+    logoImg.title = "Return to the Homepage";
+  }
+  
   logoImg.alt = "Logo Homepage";
   logoImg.classList.add("logo");
 
@@ -42,7 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("parentDiv").appendChild(navPrimaria);
 
-  var phrases = ["Benvenuto.", "Welcome.", "Bienvenido.", "환영."];
+  var lang = document.documentElement.lang;
+
+  if(lang === "it"){
+    var phrases = ["Benvenuto.", "Welcome.", "Bienvenido.", "환영."];
+  }else{
+    var phrases = ["Welcome.","Benvenuto.", "Bienvenido.", "환영."];
+  }
+  
   var typingSpeed = 90;
   var pauseTime = 1000;
   var currentIndex = 0;

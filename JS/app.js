@@ -147,6 +147,4 @@ document.getElementById("input-container").addEventListener("submit", function(e
     alert("Inserisci un email.");
     event.preventDefault(); // Impedisce l'invio del form
     return;
-}
-
-});
+}});
