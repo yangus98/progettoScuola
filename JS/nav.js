@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let logoImg = document.createElement("img");
   logoImg.src = "/assets/logo.svg";
 
+  var lang = document.documentElement.lang;
+
   if(lang === "it"){
     logoImg.title = "Torna alla Homepage";
   }else{
@@ -47,8 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
   navPrimaria.appendChild(welcomeContainer);
 
   document.getElementById("parentDiv").appendChild(navPrimaria);
-
-  var lang = document.documentElement.lang;
 
   if(lang === "it"){
     var phrases = ["Benvenuto.", "Welcome.", "Bienvenido.", "환영."];
